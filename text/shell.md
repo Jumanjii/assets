@@ -18,6 +18,6 @@ Cette analogie permettait de comprendre que l’accès à la partie « comestibl
 
 *"Appelons un chat un chat..."*
 
-Mais maintenant, je me pose la question de pourquoi on appelle un chat un chat moi maintenant !
+Mais maintenant, je me pose la question de pourquoi on appelle un chat un chat !?
 
 
