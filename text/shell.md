@@ -1,10 +1,10 @@
 # Shell
 
-## Wikipédia
-
 ![noix.jpg](/img/noix.jpg)
 
 <a href="https://fr.freepik.com/photos-vecteurs-libre/nourriture">Image: Nourriture vecteur créé par macrovector - fr.freepik.com</a>
+
+## Wikipédia
 
 Les premiers concepteurs informatiques avaient l’habitude de décrire les différentes couches logicielles d’un système par une analogie : celle du noyau de la noix.
 
