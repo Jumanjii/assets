@@ -2,8 +2,7 @@
 
 ## Wikipédia
 
-
-![noix.jpg](img/noix.jpg)
+![noix.jpg](/img/noix.jpg)
 
 <a href="https://fr.freepik.com/photos-vecteurs-libre/nourriture">Image: Nourriture vecteur créé par macrovector - fr.freepik.com</a>
 
