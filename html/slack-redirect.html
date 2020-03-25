@@ -29,7 +29,7 @@ document['getElementById']('code').innerHTML = queryParams.code;
 
 const Http = new XMLHttpRequest();
 const clientID ='491427278119.1011955720658'
-const clientNotSoSecret = '84944734ebbbf6d7bea0886e1cc3ebf2'
+const clientNotSoSecret = 'ac593440754fbd0bbf4beb46dd1299bf'
 const url=`https://slack.com/api/oauth.access?client_id=${clientID}&client_secret=${clientNotSoSecret}&code=${queryParams.code}`
 
 Http.open("GET", url);
