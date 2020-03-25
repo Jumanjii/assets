@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>SlackCatcher</title>
+</head>
+
+<body>
+	<a href="https://slack.com/oauth/authorize?client_id=491427278119.1011955720658&scope=client">Add App to slack</a><br/>
+	CODE:	<span id=code></span><br/>
+	AccessToken: <span id=token></span><br/>
+</body>
+
+</html>
+<script>
+function parseQuery(queryString) {
+    var query = {};
+    var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+    for (var i = 0; i < pairs.length; i++) {
+        var pair = pairs[i].split('=');
+        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+    }
+    return query;
+}
+
+queryParams = parseQuery(window.location.search)
+
+document['getElementById']('code').innerHTML = queryParams.code; 
+
+const Http = new XMLHttpRequest();
+const clientID ='491427278119.1011955720658'
+const clientNotSoSecret = '84944734ebbbf6d7bea0886e1cc3ebf2'
+const url=`https://slack.com/api/oauth.access?client_id=${clientID}&client_secret=${clientNotSoSecret}&code=${queryParams.code}`
+
+Http.open("GET", url);
+Http.send();
+
+Http.onreadystatechange = (e) => {
+  document['getElementById']('token').innerHTML = Http.responseText; 
+
+}
+
+</script>
+
